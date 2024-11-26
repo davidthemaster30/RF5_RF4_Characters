@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BepInEx;
-using BepInEx.IL2CPP;
+﻿using BepInEx;
+using BepInEx.Unity.IL2CPP;
 using HarmonyLib;
 
 namespace RF5_RF4_Chara
 {
     [BepInPlugin(GUID, NAME, VERSION)]
-	[BepInProcess(GAME_PROCESS)]
+    [BepInProcess(GAME_PROCESS)]
     public class Main : BasePlugin
     {
         #region PluginInfo
