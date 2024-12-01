@@ -3,9 +3,9 @@
 namespace RF5_RF4_Chara;
 
 [HarmonyPatch(typeof(SaveData.RF5SystemData), nameof(SaveData.RF5SystemData.GetSaveFlag))]
-public class SystemDataPatch
+internal static class SystemDataPatch
 {
-	public static bool Prefix(SaveData.RF5SystemData.FLAG id, ref bool __result)
+	internal static bool Prefix(SaveData.RF5SystemData.FLAG id, ref bool __result)
 	{
 		if (id == SaveData.RF5SystemData.FLAG.SaveLink)
 		{
@@ -17,4 +17,3 @@ public class SystemDataPatch
 		return true;
 	}
 }
-
