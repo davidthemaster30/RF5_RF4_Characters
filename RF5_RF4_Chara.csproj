@@ -3,6 +3,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <AssemblyName>RF5_RF4_Chara</AssemblyName>
     <Description>RF5_RF4_Chara</Description>
+    <Company>https://github.com/davidthemaster30/RF5_RF4_Characters</Company>
     <Version>1.0.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
