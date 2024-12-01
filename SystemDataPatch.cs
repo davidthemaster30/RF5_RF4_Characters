@@ -9,6 +9,7 @@ public class SystemDataPatch
 	{
 		if (id == SaveData.RF5SystemData.FLAG.SaveLink)
 		{
+			Main.Log.LogInfo($"SaveLink flagged!");
 			__result = true;
 			return false;
 		}

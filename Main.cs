@@ -15,8 +15,10 @@ namespace RF5_RF4_Chara
         private const string GAME_PROCESS = "Rune Factory 5.exe";
         #endregion
 
+        internal static readonly new ManualLogSource Log = BepInEx.Logging.Logger.CreateLogSource("RF5_RF4_Chara");
         public override void Load()
         {
+            Log.LogInfo($"Plugin {NAME} is loaded!");
             new Harmony(GUID).PatchAll();
         }
     }
