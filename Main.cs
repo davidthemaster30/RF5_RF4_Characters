@@ -16,7 +16,7 @@ public class Main : BasePlugin
     {
         Log.LogInfo($"Plugin {MyPluginInfo.PLUGIN_NAME} {MyPluginInfo.PLUGIN_VERSION} is loading!");
 
-        new Harmony(GUID).PatchAll();
+        new Harmony(MyPluginInfo.PLUGIN_GUID).PatchAll();
 
         Log.LogInfo($"Plugin {MyPluginInfo.PLUGIN_NAME} {MyPluginInfo.PLUGIN_VERSION} is loaded!");
     }
